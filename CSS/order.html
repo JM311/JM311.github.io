@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            height: 120px;
+            font-size: 150px;
+        }
+        
+       img {
+        width: 100px;
+       } 
+       fieldset {
+        color: black;
+       }
+       
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>My information</legend>
+        <form action="method= post">
+        <select name="Sex" id="">
+        <option value="mr.">Mr.</option>
+        <option value="mrs.">Mrs.</option>
+    </select>
+        <br>
+        <label for="name">Name</label>
+        <input name="mame" placeholder="Please enter your full name">
+        <br>
+        <label for="email">Email</label>
+        <input name="email" placeholder="Please enter your email">
+        <br>
+        <label for="phone">Phone</label>
+        <input name="phone" placeholder="Please enter your phonenumber">
+        <br>
+        <select name="city" id="">
+            <option value="toronto">Toronto</option>
+            <option value="london">London</option>
+            <option value="windsor">Windsor</option>
+        </select>
+    </fieldset> 
+    <br>
+    <fieldset>
+        <legend>Order information</legend>
+        <input type="checkbox">Pizza <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsABh2XiBHmNb2Q5aShyTXi8Ip6ZqorSdhNA&s" alt="">
+        <input type="checkbox">Burger <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsz9eXYu1uA-ahCZspJW39V9DyzqgGQ9N5pA&s" alt="">
+        <input type="checkbox">Hotdog <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPT_JRXc8K8lkUpU8H2_Ag4o647Kmrsy1yBA&s" alt="">
+        <input type="checkbox">Noodle <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZKMiEHEV8t_wChL7z6fOHENS6fFUeHb7tJZv4oMIn-v70IHOa_wX28pa-loP_rqJT6-k&usqp=CAU" alt="">
+        <br>
+        <h>People (1-100):</h><input type="range">
+        <br>
+        <h>Pet (1-100):</h><input type="range">
+        <br>
+
+        <input type="date">
+        <br>
+
+        <input type="time">
+        <br>
+
+        <input type="radio"name="todo">Master card
+<input type="radio"name="todo">Visa card
+<input type="radio"name="todo">Paypal
+<input type="radio"name="todo">VIP card
+    </fieldset>
+    <br>
+    <textarea name="comments" id="" placeholder="Please leave your comments"></textarea>
+    <br>
+    <input type="submit">
+    <input type="reset">
+</body>
+</html>
