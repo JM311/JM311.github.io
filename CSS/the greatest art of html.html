@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #headline{
+   text-align: center;
+   background: linear-gradient(45deg,blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
+   height: 1000px;
+ }
+ #headline h1{
+    font-size: 150px;
+    color: darkgoldenrod;
+ }
+ #headline i{
+    font-size: 50px;
+    display: block;
+    color: silver;
+    margin-top: -100px;
+ }
+ #headline button {
+         display: block;
+         margin-top: 20px;
+         margin-left: 845px;
+         background-color: gold;
+         height: 65px;
+         width: 200px;
+        
+      }
+#headline span{
+    font-size: 25px;
+}
+#aboutus{
+    margin-top: -100px;
+    text-align: center;
+    height: 1000px;
+    background:radial-gradient(blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
+}
+#aboutus h1{
+    font-size: 150px;
+    color: lime;
+}
+#aboutus h3{
+    display: block;
+    margin-top: -100px;
+    font-size: 25px;
+    color: cyan;
+}
+#crewmates{
+    text-align: center;
+    height: 1200px;
+    background: linear-gradient(135deg,blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
+}
+#crewmates h1{
+    font-size: 150px;
+    color: royalblue;
+}
+#sun{
+   
+    content: '';
+      display: inline-block;
+      height: 150px;
+      width: 200px;
+      background-image: url(https://www.teensprogramming.com/images/logo.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+     
+}
+#crewmates h2{
+    color: greenyellow;
+}
+#merry{
+   
+   content: '';
+     display: inline-block;
+     height: 150px;
+     width: 200px;
+     background-image: url(data:image/png;base64,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);
+     background-size: contain;
+     background-repeat: no-repeat;
+    
+}
+#yyy{
+    text-align: center;
+    height: 1000px;
+    background:radial-gradient(coral,tan,grey,maroon,lime,cyan,brown,purple,white,black,yellow,orange,pink,green,blue);
+}
+#yyy h1{
+    font-size: 100px;
+    color: rosybrown;
+}
+#yyy h2{
+    color: lemonchiffon;
+}
+#price{
+    text-align: center;
+    height: 1100px;
+    background: linear-gradient(90deg,blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
+}
+#price h1{
+    font-size: 100px;
+    color: aliceblue;
+}
+#price h2{
+    color: aquamarine;
+    display: block;
+    margin-top: -80px;
+}
+#examples{
+    display: block;
+    margin-top: -100px;
+    text-align: center;
+    height: 1000px;
+background: linear-gradient(180deg,blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
+}
+#examples h1{
+    font-size: 100px;
+    color: darkolivegreen;
+}
+    </style>
+</head>
+<body>
+    <div id="headline">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Web 101 Classes</h1>
+        <i>There are 8 website developer among us</i><br>
+        <button><span>Join Us!</span></button>
+    </div>
+    <div id="aboutus">
+        <br><br><br><br><br>
+        <h1>About Us</h1>
+
+        <h3>The Web 101 Classes are courses of the Xing-family GmbH founded by misses Shui Ruo. <br>
+            It is a cours which teachs the students everything about the theme coding with the <br>
+            emphasis on speed-coding, CSS and many more. To ensure high quality lessons we hired <br>
+            the famous Sun Yi-Pu from TEENS-PROGRAMMING as our main teacher. Last but not least, <br>
+            we also provide a teaching assistant from mars who goes with the name Merry Zhang. <br>
+        </h3>
+
+        </div>
+        <div id="crewmates">
+            <br><br><br><br><br>
+            <h1>Meet Our Crewmates</h1>
+            <div id="sun"></div>
+                <h2>Mister Sun is a male human borned on earth during the 1970s. <br>
+                    He was an worker who is responsible for finding mistakes in <br>
+                    codes at an advenced company. Nowadays, he is living in a city <br>
+                    named London in Canada and spending time "studying" field hamasters <br>
+                    and aliens.
+                </h2>
+            <div id="merry"></div>
+            <h2>Merry is a alien of mars borned shortly after the beginning <br>
+                of the 2010s. Even though he is not from earth, he is quite <br>
+                familiar with the culture of earth. In fact, he is the one <br>
+                and only professional Minecraft gamer who managed to keep <br>
+                playing Minecraft ever since he joined Discord.</h2>
+        </div>
+        <div id="yyy">
+            <br><br><br><br><br>
+            <h1>Why Should I Learn Programming???</h1>
+            <h2>The easy answer would be: "Because being able to programm <br>
+                is just f*cking cool!" But such an answer is not suitable. <br>
+                Let us say it this way: maybe it is more stylish to be good <br>
+                in playing video games than to be good in programming video <br>
+                games, but 20 years later, being known as one of the developers <br>
+                of Among Us 2 is definitely better than being known as the gamer <br>
+                who flunked all his tests with F-.</h2>
+        </div>
+        <div id="price">
+            <br><br><br><br><br>
+            <h1>Prices</h1>
+            <h2>Scan the QR-Code to consult prices.</h2>
+            <a href="Weixin Image_20241018170908.jpg">Click here</a>
+            <h1>Sign Up</h1>
+            <fieldset>
+                <legend>My information</legend>
+                <form action="method= post">
+                <select name="Sex" id="">
+                <option value="mr.">Male</option>
+                <option value="mrs.">Female</option>
+            </select>
+                <br>
+                <label for="name">Name</label>
+                <input name="mame" placeholder="Please enter your full name">
+                 <br>
+                <label for="email">Email</label>
+                <input name="email" placeholder="Please enter your email">
+                <br>
+                <label for="phone">Phone</label>
+                <input name="phone" placeholder="Please enter your age">
+                <br>
+                <h5>Coding Level</h5>
+                <select name="Coding level" id="">
+                    <option value="toronto">Beginner</option>
+                    <option value="windsor">Intermediate Beginner</option>
+                    <option value="london">Advenced Beginner</option>
+                    <option value="windsor">Low-level Programmer</option>
+                    <option value="windsor">Intermediate Programmer</option>
+                    <option value="windsor">Advenced Programmer</option>
+                    <option value="windsor">Professional Programmer</option>
+                </select>
+            </fieldset> 
+            <fieldset>
+                <h>Seasons (1-12):</h><input type="range">
+                <br>
+                <input type="date">
+                <br>
+        
+                <input type="time">
+                <br>
+        
+                <input type="radio"name="todo">Master card
+        <input type="radio"name="todo">Visa card
+        <input type="radio"name="todo">Paypal
+        <input type="radio"name="todo">VIP card
+            </fieldset>
+            <input type="submit">
+            <br>
+            <input type="reset">
+        </div>
+        <div id="examples">
+            <br><br><br><br><br>
+            <h1>Things That You Can Do With Programming Knowlage</h1>
+            <a href="background-attachment.html">
+                background-attachment
+            </a>
+            <br>
+            <a href="background-clip.html">
+                background-clip
+            </a>
+            <br>
+            <a href="background-size.html">
+                background-size
+            </a>
+            <br>
+            <a href="background-text.html">
+                background-text
+            </a>
+            <br>
+            <a href="backgroundimage.html">
+                background-image
+            </a>
+            <br>
+            <a href="boxshadow.html">
+                boxshadow
+            </a>
+            <br>
+            <a href="color.html">
+                color
+            </a>
+            <br>
+            <a href="column.html">
+                column
+            </a>
+            <br>
+            <a href="content.html">
+                content
+            </a>
+            <br>
+            <a href="display.html">
+                display
+            </a>
+            <br>
+            <a href="filter.html">
+                filter
+            </a>
+            <br>
+            <a href="float1(1).html">
+                float
+            </a>
+            <br>
+            <a href="font.html">
+                font
+            </a>
+            <br>
+            <a href="font1.html">
+                font1
+            </a>
+            <br>
+            <a href="font2.html">
+                font2
+            </a>
+            <br>
+            <a href="font3.html">
+                font3
+            </a>
+            <br>
+            <a href="fontpractice.html">
+                fontpractice
+            </a>
+            <br>
+            <a href="freelancer-start.html">
+                Freelancer
+            </a>
+            <br>
+            <a href="java.html">
+                Javascript
+            </a>
+            <br>
+            <a href="order.html">
+                order
+            </a>
+            <br>
+            <a href="output.html">
+                output
+            </a>
+            <br>
+            <a href="overflow.html">
+                overflow
+            </a>
+            <br>
+            <a href="stylish portfolio.html">
+                stylish portfolio
+            </a>
+            <br>
+            <a href="table.html">
+                table
+            </a>
+            <br>
+            <a href="web_icon.html">
+                web-icon
+            </a>
+        </div>
+    </div>
+</body>
+</html>
