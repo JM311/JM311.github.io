@@ -5,6 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+    body:before {
+      content: '';
+      font-size: 80px;
+      display: block;
+      
+    }
+   @media all and (min-width:700px) {
+      div {
+        display: inline-block;
+        width: 50%;
+        
+      }
+
+      body:before {
+        content: '';
+        font-size: 80px;
+      }
+    }
+
+    @media all and (min-width:1000px) {
+      div {
+        width: 50%;
+      }
+
+      body:before {
+        content: '';
+        font-size: 80px;
+      }
+    }
+
+    @media all and (min-width: 1900px) {
+      div {
+        width: 50%;
+        
+      }
+
+      body:before {
+        content: '';
+        font-size: 80px;
+      }
+    }
+    
     #headline{
    text-align: center;
    background: linear-gradient(45deg,blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
@@ -48,7 +90,40 @@
     font-size: 25px;
     color: cyan;
 }
+#aboutus span{
+    color: red;
+    text-decoration: underline;
+}
+#aboutus span1{
+    color: olive;
+    text-decoration: underline;
+}
+#aboutus span2{
+    color: blueviolet;
+    text-decoration: underline;
+}
+#aboutus span3{
+    color: yellowgreen;
+    text-decoration: underline;
+}
+#aboutus span4{
+    color: palevioletred;
+    text-decoration: underline;
+}
+#aboutus span5{
+    color: green;
+    text-decoration: underline;
+}
+#aboutus span6{
+    color: darkcyan;
+    text-decoration: underline;
+}
+#aboutus span7{
+    color: brown;
+    text-decoration: underline;
+}
 #crewmates{
+    width: auto;
     text-align: center;
     padding: 300px;
     padding-top: 300px;
@@ -72,9 +147,29 @@
 #crewmates h2{
     color: greenyellow;
 }
+#crewmates span{
+    color: lightblue;
+    text-decoration: underline;
+}
+#crewmates span1{
+    color: darkblue;
+    text-decoration: underline;
+}
+#crewmates span2{
+    color: chocolate;
+    text-decoration: underline;
+}
+#crewmates span3{
+    color: tan;
+    text-decoration: underline;
+}
+#crewmates span4{
+    color: orangered;
+    text-decoration: underline;
+}
 #merry{
    
-   content: '';
+     content: '';
      display: inline-block;
      height: 150px;
      width: 200px;
@@ -82,6 +177,30 @@
      background-size: contain;
      background-repeat: no-repeat;
     
+}
+#crewmates span5{
+    color: pink;
+    text-decoration: underline;
+}
+#crewmates span6{
+    color: coral;
+    text-decoration: underline;
+}
+#crewmates span7{
+    color: firebrick;
+    text-decoration: underline;
+}
+#crewmates span8{
+    color: darkgreen;
+    text-decoration: underline;
+}
+#crewmates span9{
+    color: darkolivegreen;
+    text-decoration: underline;
+}
+#crewmates span10{
+    color: blue;
+    text-decoration: underline;
 }
 #yyy{
     text-align: center;
@@ -95,6 +214,33 @@
 }
 #yyy h2{
     color: lemonchiffon;
+}
+#yyy span{
+    color: lightskyblue;
+    text-decoration: underline;
+}
+#yyy span1{
+    color: lightcoral;
+    text-decoration: underline;
+}
+#yyy span2{
+    color: lightsalmon;
+    text-decoration: underline;
+}
+#yyy span3{
+    color: lightcyan;
+    text-decoration: underline;
+}
+#yyy span4{
+    color: lightslategrey;
+    text-decoration: underline;
+}
+#yyy span5{
+    color: lightpink;
+    text-decoration: underline;
+}
+#yyy span6{
+    color: black;
 }
 #price{
     text-align: center;
@@ -120,8 +266,14 @@
 background: linear-gradient(180deg,blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
 }
 #examples h1{
-    font-size: 100px;
+    font-size: 70px;
     color: darkolivegreen;
+}
+#examples table{
+    border: solid;
+    display: block;
+    text-align: center;
+    margin-top: -500px;
 }
     </style>
 </head>
@@ -135,11 +287,11 @@ background: linear-gradient(180deg,blue,green,pink,orange,yellow,black,white,pur
         
         <h1>About Us</h1>
 
-        <h3>The Web 101 Classes are courses of the Xing-family GmbH founded by misses Shui Ruo. <br>
+        <h3>The <span>web 101 classes</span> are courses of the <span1>Xing-family GmbH</span1>founded by misses <span2>Shui Ruo</span2>. <br>
             It is a cours which teachs the students everything about the theme coding with the <br>
-            emphasis on speed-coding, CSS and many more. To ensure high quality lessons we hired <br>
-            the famous Sun Yi-Pu from TEENS-PROGRAMMING as our main teacher. Last but not least, <br>
-            we also provide a teaching assistant from mars who goes with the name Merry Zhang. <br>
+            emphasis on <span3>speed-coding</span3>, <span4>CSS</span4> and many more. To ensure high quality lessons we hired <br>
+            the famous <span5>Sun Yi-Pu</span5> from <span6>TEENS-PROGRAMMING</span6> as our main teacher. Last but not least, <br>
+            we also provide a teaching assistant from mars who goes with the name <span7>Merry Zhang</span7>. <br>
         </h3>
 
         </div>
@@ -147,29 +299,30 @@ background: linear-gradient(180deg,blue,green,pink,orange,yellow,black,white,pur
             
             <h1>Meet Our Crewmates</h1>
             <div id="sun"></div>
-                <h2>Mister Sun is a male human borned on earth during the 1970s. <br>
+                <h2>Mister Sun is a <span>male human</span> borned on <span1>earth</span1> during the 1970s. <br>
                     He was an worker who is responsible for finding mistakes in <br>
-                    codes at an advenced company. Nowadays, he is living in a city <br>
-                    named London in Canada and spending time "studying" field hamasters <br>
-                    and aliens.
+                    codes at an <span2>advenced company</span2>. Nowadays, he is living in a city <br>
+                    named <span3>London</span3> in <span4>Canada</span4> and spending time 
+                     "studying" field hamasters and aliens.
                 </h2>
             <div id="merry"></div>
-            <h2>Merry is a alien of mars borned shortly after the beginning <br>
+            <h2>Merry is an <span5>alien</span5> of <span6>mars</span6> borned shortly after the beginning <br>
                 of the 2010s. Even though he is not from earth, he is quite <br>
-                familiar with the culture of earth. In fact, he is the one <br>
-                and only professional Minecraft gamer who managed to keep <br>
-                playing Minecraft ever since he joined Discord.</h2>
+                familiar with the <span7>culture of earth</span7>. In fact, he is the one <br>
+                and only <span8>professional Minecraft gamer</span8> who managed to keep <br>
+                playing <span9>Minecraft</span9> ever since he joined <span10>Discord</span10>.</h2>
         </div>
         <div id="yyy">
             
             <h1>Why Should I Learn Programming???</h1>
             <h2>The easy answer would be: "Because being able to programm <br>
-                is just f*cking cool!" But such an answer is not suitable. <br>
-                Let us say it this way: maybe it is more stylish to be good <br>
-                in playing video games than to be good in programming video <br>
-                games, but 20 years later, being known as one of the developers <br>
-                of Among Us 2 is definitely better than being known as the gamer <br>
-                who flunked all his tests with F-.</h2>
+                is just fuckung <span>cool</span>!" But such an answer is not suitable. <br>
+                Let us say it this way: maybe it is more stylish to be <span1>good <br>
+                in playing video games</span1> 
+                 than to be <span2>good in programming video <br>
+                games</span2>, but <span3>20 years later</span3>, being known as one of the <span4>developers <br>
+                of Among Us 2 </span4>is definitely better than being known as the <span5>gamer</span5> <br>
+                who flunked all his tests with <span6>F-</span6>.</h2>
         </div>
         <div id="price">
             
@@ -226,108 +379,126 @@ background: linear-gradient(180deg,blue,green,pink,orange,yellow,black,white,pur
         <div id="examples">
             
             <h1>Things That You Can Do With Programming Knowlage</h1>
-            <a href="background-attachment.html">
+            <table>
+        <tr>
+           <td><a href="background-attachment.html">
                 background-attachment
-            </a>
+            </a></td>
             <br>
-            <a href="background-clip.html">
+            <td><a href="background-clip.html">
                 background-clip
-            </a>
+            </a></td>
             <br>
-            <a href="background-size.html">
+            <td><a href="background-size.html">
                 background-size
-            </a>
+            </a></td>
             <br>
-            <a href="background-text.html">
+            <td><a href="background-text.html">
                 background-text
-            </a>
+            </a></td>
             <br>
-            <a href="backgroundimage.html">
+            <td><a href="backgroundimage.html">
                 background-image
-            </a>
-            <br>
-            <a href="boxshadow.html">
+            </a></td>
+            <td><a href="boxshadow.html">
                 boxshadow
-            </a>
+            </a></td>
             <br>
-            <a href="color.html">
+            <td><a href="color.html">
                 color
-            </a>
+            </a></td>
+        </tr>
+        <tr>
             <br>
-            <a href="column.html">
+            <td><a href="column.html">
                 column
-            </a>
+            </a></td>
             <br>
-            <a href="content.html">
+            <td><a href="content.html">
                 content
-            </a>
+            </a></td>
             <br>
-            <a href="display.html">
+            <td><a href="display.html">
                 display
-            </a>
+            </a></td>
             <br>
-            <a href="filter.html">
+            <td><a href="filter.html">
                 filter
-            </a>
+            </a></td>
             <br>
-            <a href="float1(1).html">
+            <td><a href="float1(1).html">
                 float
-            </a>
+            </a></td>
             <br>
-            <a href="font.html">
+            <td><a href="font.html">
                 font
-            </a>
+            </a></td>
             <br>
-            <a href="font1.html">
+            <td><a href="font1.html">
                 font1
-            </a>
+            </a></td>
+        </tr>
+        <tr>
             <br>
-            <a href="font2.html">
+            <td><a href="font2.html">
                 font2
-            </a>
+            </a></td>
             <br>
-            <a href="font3.html">
+            <td><a href="font3.html">
                 font3
-            </a>
+            </a></td>
             <br>
-            <a href="fontpractice.html">
+            <td><a href="fontpractice.html">
                 fontpractice
-            </a>
+            </a></td>
             <br>
-            <a href="freelancer-start.html">
+            <td><a href="freelancer-start.html">
                 Freelancer
-            </a>
+            </a></td>
             <br>
-            <a href="java.html">
+            <td><a href="java.html">
                 Javascript
-            </a>
+            </a></td>
             <br>
-            <a href="order.html">
+            <td><a href="order.html">
                 order
-            </a>
+            </a></td>
             <br>
-            <a href="output.html">
+            <td><a href="output.html">
                 output
-            </a>
+            </a></td>
+        </tr>    
+        <tr>
             <br>
-            <a href="overflow.html">
+            <td><a href="overflow.html">
                 overflow
-            </a>
+            </a></td>
             <br>
-            <a href="stylish portfolio.html">
+            <td><a href="stylish portfolio.html">
                 stylish portfolio
-            </a>
+            </a></td>
             <br>
-            <a href="table.html">
+            <td><a href="table.html">
                 table
-            </a>
+            </a></td>
             <br>
-            <a href="web_icon.html">
+            <td><a href="web_icon.html">
                 web-icon
-            </a>
-            <a href="z_index.html">
+            </a></td>
+            <br>
+            <td><a href="z_index.html">
                 z-index
-            </a>
+            </a></td>
+            <br>
+            <td><a href="responsive_design.html">
+                responsive design
+            </a></td>
+            <br>
+            <td><a href="specificity.html">
+                specificity
+            </a></td>
+            </tr>
+        </table>
         </div>     
     </div>
 </body>

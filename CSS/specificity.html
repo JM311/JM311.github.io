@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            font-size: 60px;
+
+        }
+        li{
+            color: blue !important;
+        }
+        li.first{
+            color: lime;
+        }
+        ul li.first{
+            color: fuchsia;
+        }
+        li#fir{
+            color: mediumpurple;   
+        }
+        /* !important > inline style > id > class > tag */
+        /* long selector > short selector */
+        /* the last rule override the rules before */
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="fir"class="first" style="color:black">Pickelball</li>
+        <li>Tennis</li>
+        <li>Hiking</li>
+        <li>With friend</li>
+    </ul>
+</body>
+</html>
