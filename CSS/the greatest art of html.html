@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+    html{
+        word-break: break-all;
+    }
     body:before {
       content: '';
       font-size: 80px;
@@ -48,8 +51,8 @@
     }
 #container{
     background:  linear-gradient(45deg,blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
-    padding: 50px;
-    padding-top: 50px;
+    padding: 50px 0;
+    position: fixed;
 }
 #item{
     float: left;
@@ -62,8 +65,7 @@
     #headline{
    text-align: center;
    background: linear-gradient(45deg,blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
-   padding: 300px;
-   padding-top:300px;
+   padding: 300px 0;
  }
  #headline h1{
     font-size: 150px;
@@ -88,8 +90,7 @@
 #audio{
     text-align: center;
     background: linear-gradient(90deg,coral,tan,gray,maroon,lime,cyan,brown,purple,white,black,yellow,orange,pink,green,blue);
-    padding: 300px;
-    padding-top: 300px;
+    padding: 300px 0;
 }
 #audio h1{
     font-size: 70px;
@@ -106,8 +107,7 @@
 #aboutus{
     text-align: center;
     background:radial-gradient(blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
-    padding: 300px;
-    padding-top: 300px;
+    padding: 300px 0;
 }
 
 #aboutus h1{
@@ -155,8 +155,7 @@
 #crewmates{
     width: auto;
     text-align: center;
-    padding: 300px;
-    padding-top: 300px;
+    padding: 300px 0;
     background: linear-gradient(135deg,blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
 }
 #crewmates h1{
@@ -234,8 +233,7 @@
 }
 #yyy{
     text-align: center;
-    padding: 300px;
-    padding-top: 300px;
+    padding: 300px 0;
     background:radial-gradient(coral,tan,grey,maroon,lime,cyan,brown,purple,white,black,yellow,orange,pink,green,blue);
 }
 #yyy h1{
@@ -274,8 +272,7 @@
 }
 #price{
     text-align: center;
-    padding: 300px;
-    padding-top: 300px;
+    padding: 300px 0;
     background: linear-gradient(90deg,blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
 }
 #price h1{
@@ -294,8 +291,8 @@
     display: block;
     margin-top: -100px;
     text-align: center;
-    padding: 300px;
-    padding-top: 300px;
+    padding: 300px 0;
+    margin: auto;
 background: linear-gradient(180deg,blue,green,pink,orange,yellow,black,white,purple,brown,cyan,lime,maroon,grey,tan,coral);
 }
 #examples h1{
@@ -360,7 +357,7 @@ background: linear-gradient(180deg,blue,green,pink,orange,yellow,black,white,pur
     <section id="crewmates">
         <div id="crewmates">
             
-            <h1>Meet Our Crewmatess</h1>
+            <h1>Meet Our Crewmates</h1>
             <div id="sun"></div>
                 <h2>Mister Sun is a <span>male human</span> borned on <span1>earth</span1> during the 1970s. <br>
                     He was an worker who is responsible for finding mistakes in <br>
@@ -399,10 +396,11 @@ background: linear-gradient(180deg,blue,green,pink,orange,yellow,black,white,pur
             <h1>Sign Up</h1>
             <fieldset>
                 <legend>My information</legend>
-                <form action="method= post">
-                <select name="Sex" id="">
+                <form method= "post">
+                <select name="Gender" id="gender">
                 <option value="mr.">Male</option>
                 <option value="mrs.">Female</option>
+                </form>
             </select>
                 <br>
                 <label for="name">Name</label>
@@ -415,7 +413,7 @@ background: linear-gradient(180deg,blue,green,pink,orange,yellow,black,white,pur
                 <input name="phone" placeholder="Please enter your age">
                 <br>
                 <h5>Coding Level</h5>
-                <select name="Coding level" id="">
+                <select name="Coding level" id="codinglevel">
                     <option value="toronto">Beginner</option>
                     <option value="windsor">Intermediate Beginner</option>
                     <option value="london">Advenced Beginner</option>
@@ -478,6 +476,7 @@ background: linear-gradient(180deg,blue,green,pink,orange,yellow,black,white,pur
             <td><a href="color.html">
                 color
             </a></td>
+            <td><a href="CR3D.html">CR3D</a></td>
         </tr>
         <tr>
             <br>
@@ -572,6 +571,5 @@ background: linear-gradient(180deg,blue,green,pink,orange,yellow,black,white,pur
         </table>
         </div>  
     </section> 
-    </div>
 </body>
 </html>
