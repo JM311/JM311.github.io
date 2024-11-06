@@ -5,6 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body:before {
+      content: '';
+      font-size: 80px;
+      display: block;
+      
+    }
+   @media all and (min-width:700px) {
+      div {
+        display: inline-block;
+        width: 50%;
+        
+      }
+
+      body:before {
+        content: '';
+        font-size: 80px;
+      }
+    }
+
+    @media all and (min-width: 1000px) {
+     div {
+        width: 50%;
+        display: inline-block;
+      }
+    
+      body:before {
+        content: '';
+        font-size: 80px;
+      }
+    }
+
+    @media all and (min-width: 1900px) {
+      div {
+        width: 50%;
+        display: inline-block;
+      }
+    
+      body:before {
+        content: '';
+        font-size: 80px;
+      }
+    }
     html{
         word-break: break-all;
     }
@@ -71,16 +113,16 @@
       background-size: cover;
       background-attachment: fixed;
     }
-    section:first-child{
+    #hobbys section:first-child{
         background-image: url(CSS/gogamefoto.jpeg);
     }
-    section:nth-child(2){
+    #hobbys section:nth-child(2){
         background-image: url(CSS/guitarfoto.jpg);
     }
-    section:nth-child(3){
+    #hobbys section:nth-child(3){
         background-image: url(CSS/handballfoto.jpg);
     }
-    section:last-child{
+    #hobbys section:last-child{
         background-image: url(https://www.teensprogramming.com/images/logo.png);
     }
     #achievement{
@@ -167,7 +209,7 @@
     The remake of Stylish Portfolio
    </a><br>
    <a href="CSS/the greatest art of html.html">
-    The "official" advertise of Web101
+    The "official" advertisement of Web101
    </a><br>
 </div>
 </section>
