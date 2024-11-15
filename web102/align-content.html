@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            font-size: 2em;
+            display: flex;
+            border: solid red;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-content: center;
+            align-content: end;
+            align-content: flex-start;
+            align-content: space-around;
+            align-content: space-between;
+            align-content: stretch;
+            height: 600px;
+        }
+
+        #comtainer>div {
+            border: solid 1px;
+            background-color: lime;
+        }
+
+        #container>div:nth-child(odd) {
+            width: 100px;
+            /*height: 150px;*/
+            background-color: lime;
+        }
+
+        #container>div:nth-child(even) {
+            width: 150px;
+            /*height: 200px;*/
+            background-color: aqua;
+        }
+
+        /*justify content is for main direction(x-achse), align content is for cross direction(y-achse)*/
+        /*align items moves the words in the div while the align content moves the divs at y-achse*/
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>1<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit At</div>
+        <div>2<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div>3<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit</div>
+        <div>4<br>Lorem ipsum dolor sit, amet consectetur adipisicing elit</div>
+        <div>5<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div>6<br>Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+    <img src="align-content-example.svg" alt="">
+</body>
+
+</html>
