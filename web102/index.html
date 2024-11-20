@@ -5,11 +5,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <style>
+            body:before {
+      content: '';
+      font-size: 80px;
+      display: block;
+      
+    }
+   @media all and (min-width:700px) {
+      div {
+        display: inline-block;
+        width: 50%;
+        
+      }
 
+      body:before {
+        content: '';
+        font-size: 80px;
+      }
+    }
+
+    @media all and (min-width: 1000px) {
+     div {
+        width: 50%;
+        display: inline-block;
+      }
+    
+      body:before {
+        content: '';
+        font-size: 80px;
+      }
+    }
+
+    @media all and (min-width: 1900px) {
+      div {
+        width: 50%;
+        display: inline-block;
+      }
+    }
+      body:before {
+        content: '';
+        font-size: 80px;
+      }
+        html{
+            word-break: break-all;
+        }
+        section{
+            text-align: center;
+            padding: 300px 0;
+        }
+     #container{
+        position: fixed;
+        padding: 50px 0;
+        background: linear-gradient(90deg,black,darkgrey,grey,lightslategrey,lightgray,white);
+     }
+        #intro{
+            background-image:url(https://www.teensprogramming.com/images/logo.png);
+        }
+        #intro h1{
+            font-size: 150px;
+            color: lime;
+        }
+        #intro h3{
+            font-size: 50px;
+            color: magenta;
+        }
+        #intro div{
+            background-image: none;
+        }
+        #day1{
+            background: linear-gradient(90deg,lightcyan,aquamarine,cyan,aqua,darkcyan);
+        }
+        #day1 h1{
+            font-size: 150px;
+            color: lightblue;
+        }
+        #day1 i{
+            font-size: 50px;
+            color: skyblue;
+            margin-top: -130px;
+            display: block;
+        }
+        #day1 h3{
+            color: blue;
+        }
+        #day1 h2{
+            color: darkblue;
+        }
+        ul {
+      color: white;
+      font-size: 2.5em;
+      text-align: center;
+      list-style: none;
+    }
+
+    ul li:before {
+      content: '';
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background-color: blue;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 20px;
+    }
+    </style>
+</head>
 <body>
-    <a href="flex_direction_wrap_gap.html">flex</a>
-    <a href="justify_content.html">justify</a>
+<div id="container">
+    <div id="item">
+    <a href="#intro">Intro</a>
+    <a href="#day1">Day 1</a>
+    </div>
+</div>
+<section id="intro">
+<div id="intro">
+<h1>The ultimate Web 102 dictionary</h1>
+<h3>This website will give you a better 
+<br>impression about the Web102 courses.</h3>
+</div>
+</section>
+<section id="day1">
+<div id="day1">
+<h1>Day 1</h1>
+<i>15/11/2024</i><br>
+<ul>
+<li><a href="flex_direction_wrap_gap.html">Flex-Container</a></li>
+<li><a href="justify_content.html">Justify-Content</a></li>
+<li><a href="align-items.html">Align-Items</a></li>
+<li><a href="align-content.html">Align-Content</a>
+</ul>
+<h3>In the first lesson of Web102, we learnd about flex-container, justify-content, align-content and align-content. <br>
+    The flex-container is a alternative of the normal ones which makes every childof the container a flex item. <br>
+    The main-direction of the flex-container is controlled with justify-content, while the align-content controlls the <br>
+    cross-direction. The align-items is for the controll over the items of the flex-container. <br>
+</h3>
+<h2>Speed-Coding fingertrick of the week: <br>
+    #container`s name>tag{$}*number of tag <br>
+    For example: <br>
+    #container>div{$}*6 <br>
+</h2>
+</div>
+
+</section>
 </body>
 
 </html>
