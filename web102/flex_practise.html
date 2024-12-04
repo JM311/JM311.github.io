@@ -1,28 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        #container{
-            display: flex;
-            direction: row;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            border: solid orange;
-            gap: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>homework_1_flexbox</title>
+  <style>
+    /*    mobile first */
+    body {
+      margin: 8px;
+      padding: 0;
+      /*            height: 100vh;*/
+      border: solid orange 5px;
+      border-radius: 10px;
+    }
+
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      flex-direction: column;
+    }
+
+    #container>div {
+      flex: 0 0 30%;
+    }
+
+    #container>div>img {
+      /*
+                border: solid purple;
+*/
+      width: 100%;
+
+      /* The image does not change its size if I set a fixed size. But if i set width: 50%; , the size changes correctly but all the items stick to the left side of the screen instead of being placed in the center. How do I fix that?*/
+    }
+
+    @media all and (min-width:768px) {
+
+      #container {
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+
+      #container>div {
+        flex: 0 0 40%;
+      }
+
+
+
+    }
+
+    @media all and (min-width:992px) {
+      #container>div {
+        flex: 0 0 30%;
+      }
+
+
+
+    }
+
+    @media all and (min-width:1200px) {
+
+      #container>div {
+        flex: 0 0 16%;
+      }
+
+      #container>div>img {
+        width: 100%;
+        max-width: 220px;
+        /*
+                border: solid blue;
+*/
+      }
+    }
+  </style>
+
 </head>
+
 <body>
-    <div id="container">
-        <div><img src="data:image/jpeg;base64,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" alt="">Jeffery</div>
-        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLVVesLXmfCAUZiql972GvZBb3DptKByhKLw&s" alt="">Liang</div>
-        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNpGFmce1SSG6dDE6WtJnG9S1NxW1Wp911qw&s" alt="">Yule</div>
-        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTk7MCXTLHxowS1gaRHcL_d9GvqYvrwg9nkw&s" alt="">Lias</div>
-        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4Dw6SOXwrK4KFOPC6JYbh12tp0lcbFCC-uA&s" alt="">Mary (Merry)</div>
-        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0C6XGazDa3UagfPZpyT1OjSLfQH-lKMEmdw&s" alt="">Jiaming</div>
-    </div>
-</body>
-</html>
+
+  <div id="container">
+    <div> <img src="https://media.istockphoto.com/id/2162525334/de/foto/hund-lucky-australian-shepherd-sitzt-auf-einem-baumstamm-im-wald-haustier-in-der-natur.jpg?s=612x612&w=0&k=20&c=jLVO-dv-ZE5iD3SelQXilmVtrguMOzZhzpok62r80xE=" alt=""> </div>
+    <div> <img src="https://media.istockphoto.com/id/2020750762/de/foto/portr%C3%A4t-eines-hundes-mit-wild-wallendem-fell.jpg?s=612x612&w=0&k=20&c=53HTg-isRYpNKcehh14j0nADUrLIO1YfiU_eNNOx2ek=" alt=""> </div>
+    <div> <img src="https://media.istockphoto.com/id/1319054788/de/foto/portr%C3%A4t-des-hundes-in-der-natur.jpg?s=612x612&w=0&k=20&c=X8yrJRoiFNJd9N37UMLu06O_owoSVD4ErffS-_30tdA=" alt=""> </div>
+    <div> <img src="https://media.istockphoto.com/id/1652227141/de/foto/laufender-flauschiger-pembroke-welsh-corgi-welpe.jpg?s=612x612&w=0&k=20&c=EpSVPET6e-VuKjcrMVfANWKnLsft6QCTDvZFjioDg4k=" alt=""> </div>
+    <div> <img src="https://media.istockphoto.com/id/2105314282/de/foto/cat-taking-a-selfie-with-dog.jpg?s=612x612&w=0&k=20&c=X8hrXFVam2p85_aOeYttflsDvwxL4-4jTKqBFRFjkp4=" alt=""> </div>
+    <div> <img src="https://media.istockphoto.com/id/1905812756/de/foto/zwei-hunde-die-sich-beim-spazierengehen-umarmen-haustiere-in-der-natur-niedlicher-border.jpg?s=612x612&w=0&k=20&c=DBXMtbE_mLj6eAi_TQaD8Ez9gG0LZujK2wv3_rzMP6c=" alt=""> </div>
+  </div>
+
+</body></html>
