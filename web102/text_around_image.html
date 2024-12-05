@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #container{
+        display: flex;
+        direction: row;
+        flex-wrap: wrap;
+       }
+       div{
+        flex-basis: 400px;
+        flex-grow: 1;
+        flex-shrink: 1;
+       }
+       #header{
+        background-color: lime;
+        flex: 0 0 100%;
+        order: 1;
+       }
+       #left{
+        background-color: aqua;
+        flex: 0 0 25%;
+        order: 2;
+        flex-direction: column;
+       }
+       #image{
+        background-color: black;
+        flex: 0 0 50%;
+        order: 3;
+        flex-direction: column;
+       }
+       #right{
+        background-color: magenta;
+        flex: 0 0 25%;
+        order: 4;
+        flex-direction: column;
+       }
+       #footer{
+        background-color: yellow;
+        flex: 0 0 100%;
+        order: 5;
+       }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+        <div id="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut quas architecto dolorum, quod provident nesciunt voluptates possimus inventore veritatis amet, delectus ullam blanditiis excepturi? Deserunt, molestias? Sed, necessitatibus! Labore?</div>
+        <div id="image">
+            <img src="https://upload.wikimedia.org/wikipedia/el/thumb/9/9a/Among_Us_cover_art.jpg/200px-Among_Us_cover_art.jpg" alt="">
+        </div>
+        <div id="right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima rerum quis tempore exercitationem molestias expedita vel veritatis nulla blanditiis? Ipsam quam reprehenderit laboriosam repellendus rerum porro voluptatum aspernatur enim commodi!</div>
+        <div id="footer">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </div>
+</body>
+</html>
