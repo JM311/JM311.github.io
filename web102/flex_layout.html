@@ -5,73 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        #container{
-            display: flex;
-            direction: row;
-            flex-wrap: wrap;
-        }
-        div{
+        #item>*{
             flex-basis: 600px;
-            flex-grow: 1;
             flex-shrink: 1;
+            flex-grow: 1;
+     }
+     #item{
+            flex-wrap: wrap;
+            display: flex;
         }
-        #header{
+        header{
             background-color: cyan;
         }
-        #Lorem{
+        main{
             background-color: coral;
         }
-        #Left{
+        aside{
             background-color: grey;
         }
-        #right{
+        aside1{
             background-color: green;
         }
-        #Footer{
+        footer{
             background-color: red;
         }
         @media all and (min-width:600px) {
-           #right{
-             flex: 0 0 50%;
-           }
-           #Left{
-            flex: 0 0 50%;
-           }
+        #item{
+        aside{
+        flex: 0 0 50%;
+        }
+        aside1{
+        flex: 0 0 50%;
+        }
+        }
         }
         @media all and (min-width:800px) {
-            #header{
+            #item{
+            header{
                 flex: 0 0 100%;
                 order: 1;
             }
-            #right{
+            aside1{
                 flex: 0 0 25%;
-                flex-direction: column;
                 order: 4;
             }
-            #Left{
+            aside{
                 flex: 0 0 25%;
-                flex-direction: column;
                 order: 2;
             }
-            #Lorem{
+            main{
                 flex: 0 0 50%;
-                flex-direction: column;
                 order: 3;
             }
-            #Footer{
+            footer{
                 flex: 0 0 100%;
                 order: 5;
             }
         }
+        }
     </style>
 </head>
 <body>
-    <div id="container">
-        <div id="header">Header</div>
-        <div id="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cumque itaque fugit doloribus hic, voluptatem possimus saepe amet quasi quaerat voluptates sequi quo exercitationem explicabo id ipsa accusamus blanditiis dolor!</div>
-        <div id="Left">Aside left</div>
-        <div id="right">Aside right</div>
-        <div id="Footer">Footer</div>
-    </div>
+        <div id="item">
+         <header>Header</header>
+        <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sequi qui doloremque possimus architecto quia similique aliquid consequuntur quisquam numquam neque sunt voluptate, magnam eligendi tempora reprehenderit nostrum necessitatibus accusamus!</main>
+         <aside>Aside Left</aside>
+        <aside1>Aside Right</aside1>
+        <footer>Footer</footer>
+        </div>
 </body>
 </html>
